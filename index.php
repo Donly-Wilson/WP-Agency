@@ -22,21 +22,30 @@
       <h1>services</h1>
     </div>
     <div class="services-container">
-      <div class="box blue">
-        <i class="fas fa-trophy"></i>
-        <h5>Best Quality</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-      <div class="box red">
-        <i class="fas fa-plane"></i>
-        <h5>Best Quality</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-      <div class="box yellow">
-        <i class="fas fa-money-check-alt"></i>
-        <h5>Best Quality</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
+      <?php
+      // select pod sevices and add it in variable
+      $myServicePod = pods('service');
+      // select pod and put them in ascending order
+      $myServicePod->find('name ASC')
+      ?>
+
+      <?php while ($myServicePod->fetch()) : ?>
+        <!-- //while loop run aslong as there are are service pods -->
+        <?php
+        $name = $myServicePod->field('name');
+        $icon_class = $myServicePod->field('icon_class');
+        $content = $myServicePod->field('content');
+        $border_color = $myServicePod->field('border_color');
+        $permalink = $myServicePod->field('permalink');
+        ?>
+
+        <div class="box <?php echo $border_color ?>">
+          <i class="<?php echo $icon_class ?>"></i>
+          <h5><?php echo $name ?></h5>
+          <p><?php echo $content ?></p>
+        </div>
+      <?php endwhile; ?>
+
     </div>
   </div>
 </section>
@@ -137,21 +146,31 @@
         </div>
       </div>
       <div class="info">
-        <div class="info-box">
-          <h4>Graphic Artist - Nike</h4>
-          <span class="date">June 2012 - July 2013</span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        </div>
-        <div class="info-box">
-          <h4>Graphic Artist - Nike</h4>
-          <span class="date">June 2012 - July 2013</span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        </div>
-        <div class="info-box">
-          <h4>Graphic Artist - Nike</h4>
-          <span class="date">June 2012 - July 2013</span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        </div>
+        <?php
+        // select pod sevices and add it in variable
+        $myExperiencePod = pods('experience');
+        // select pod and put them in ascending order
+        $myExperiencePod->find('name ASC')
+        ?>
+
+        <?php while ($myExperiencePod->fetch()) : ?>
+          <!-- //while loop run aslong as there are are experience pods -->
+          <?php
+          $name = $myExperiencePod->field('name');
+          $location = $myExperiencePod->field('location');
+          $start_end_date = $myExperiencePod->field('start_end_date');
+          $content = $myExperiencePod->field('content');
+          $permalink = $myExperiencePod->field('permalink');
+          ?>
+
+          <div class="info-box">
+            <h4><?php echo $name ?> - <?php echo $location ?></h4>
+            <span class="date">
+              <?php echo $start_end_date ?>
+            </span>
+            <p><?php echo $content ?></p>
+          </div>
+        <?php endwhile; ?>
       </div>
     </div>
   </div>
@@ -303,7 +322,8 @@
 <?php get_footer(); ?>
 <script src="<?php echo get_bloginfo('template_directory'); ?> /js/app.js"></script>
 
-
+<!-- input wordpress admin header -->
+<?php wp_footer(); ?>
 </body>
 
 </html>
