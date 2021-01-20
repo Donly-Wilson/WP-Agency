@@ -15,6 +15,7 @@ add_action(
 
 function myportfolio_widgets_init()
 {
+    // This is the right side widget bar 
     register_sidebar(array(
         'name'          => __('right-sidebar', 'My Agency'),
         'id'            => 'sidebar-1',
@@ -24,6 +25,7 @@ function myportfolio_widgets_init()
         'after_title'   => '</h3>',
     ));
 
+    // This is the left side widget bar 
     register_sidebar(array(
         'name'          => __('left-sidebar', 'My Agency'),
         'id'            => 'left-sidebar-1',
