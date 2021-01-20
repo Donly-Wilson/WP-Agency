@@ -210,6 +210,7 @@
       <div class="square"></div>
       <h1>Testimonials</h1>
     </div>
+    <div id="tesimonial-app"></div>
     <div class="testimonials-container">
       <div class="test-sides test-left">
         <div class="person-img" style="background: url('https://d3iw72m71ie81c.cloudfront.net/male-30.jpg');">
@@ -244,7 +245,7 @@
 </section>
 <!-- Wordpress syntax to add footer using php  -->
 <?php get_footer(); ?>
-<script src="<?php echo get_bloginfo('template_directory'); ?> /js/app.js"></script>
+<script type="module" src="<?php echo get_bloginfo('template_directory'); ?> /js/app.js"></script>
 
 <!-- input wordpress admin header -->
 <?php wp_footer(); ?>

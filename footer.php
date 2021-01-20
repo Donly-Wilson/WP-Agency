@@ -13,6 +13,6 @@
             <i class="fab fa-instagram"></i>
         </a>
     </div>
-    <h5>Joe Santos Garcia</h5>
+    <h5>Donly Wilson</h5>
     <h6>Web Developer</h6>
 </footer>
