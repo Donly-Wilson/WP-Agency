@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title><?php wp_title() ?></title>
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <!-- Get right location for WP css -->
@@ -17,8 +17,20 @@
 
 <body <?php body_class() ?>>
     <header>
+        <?php
+        //Function to create an arconym from site name
+        function arconym($str, $as_space = array('-'))
+        {
+            $str = str_replace($as_space, ' ', trim($str));
+            $ret = '';
+            foreach (explode(' ', $str) as $word) {
+                $ret .= strtoupper($word[0]);
+            }
+            return $ret;
+        }
+        ?>
         <div class="logo">
-            <a href="/" class="name">JSM
+            <a href="/" class="name"><?php echo arconym(get_bloginfo('name')); ?>
         </div>
         </div>
         <div class="header-menu">

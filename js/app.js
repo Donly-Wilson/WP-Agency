@@ -36,19 +36,26 @@ axios.get('/wp-json/wp/v2/testimonials')
     var postIds = [];
     // 'response' only return if conection was good === (200), '.data' is used to return data in object
     postData = response.data;
+    //Array to hold featured image id
+    var featuredImgId =[];
     //loop over all post, get the id of each and push to 'postIds' array 
     postData.map((item)=> postIds.push(item.id));
+    //loop over all post, push to object to 'featuredImgId' array 
+    postData.map((item)=> featuredImgId.push({
+      id:item.id,
+      imageId:item.featured_media
+    }));
     //get link or route for image 1
     function getImage0(){
-      return axios.get('/wp-json/wp/v2/media?parent=' + postIds[0]);
+      return axios.get('/wp-json/wp/v2/media/' + featuredImgId[0].imageId);
     };
     //get link or route for image 2
     function getImage1(){
-      return axios.get('/wp-json/wp/v2/media?parent=' + postIds[1]);
+      return axios.get('/wp-json/wp/v2/media/' + featuredImgId[1].imageId);
     };
     //get link or route for image 3
     function getImage2(){
-      return axios.get('/wp-json/wp/v2/media?parent=' + postIds[2]);
+      return axios.get('/wp-json/wp/v2/media/' + featuredImgId[2].imageId);
     };
 
     // get all thoses links image together 
@@ -58,17 +65,17 @@ axios.get('/wp-json/wp/v2/testimonials')
         //push neded data from image 1 to postImages array
         postImages.push({
           id: postIds[0],
-          image: image0.data[0].media_details.sizes.full.source_url
+          image: image0.data.media_details.sizes.full.source_url
         });
         //push neded data from image 2 to postImages array
         postImages.push({
           id: postIds[1],
-          image: image1.data[0].media_details.sizes.full.source_url
+          image: image1.data.media_details.sizes.full.source_url
         });
         //push neded data from image 3 to postImages array
         postImages.push({
           id: postIds[2],
-          image: image2.data[0].media_details.sizes.full.source_url
+          image: image2.data.media_details.sizes.full.source_url
         });
         console.log(postImages);
         initApp(response);

@@ -4,9 +4,9 @@
   <div class="container">
     <div class="info">
       <div class="blue-square"></div>
-      <h1>Joe Santos Garcia</h1>
+      <h1><?php echo get_bloginfo('name') ?></h1>
       <p>Web Developer</p>
-      <a href="#">Latest Works</a>
+      <a href="#portfolio-section">Latest Works</a>
     </div>
     <div class="img">
       <div class="background-img">
@@ -210,8 +210,13 @@
       <div class="square"></div>
       <h1>Testimonials</h1>
     </div>
-    <div id="testimonials-app"></div>
-
+    <div id="testimonials-app">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+      <h3>Loading</h3>
+    </div>
   </div>
 </section>
 <!-- Wordpress syntax to add footer using php  -->
