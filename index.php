@@ -221,7 +221,7 @@
 </section>
 <!-- Wordpress syntax to add footer using php  -->
 <?php get_footer(); ?>
-<script type="module" src="<?php echo get_bloginfo('template_directory'); ?> /js/app.js"></script>
+<script type="module" src="<?php echo get_template_directory_uri() ?>/js/app.js"></script>
 
 <!-- input wordpress admin header -->
 <?php wp_footer(); ?>
