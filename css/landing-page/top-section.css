@@ -1,12 +1,212 @@
+/* To put in rightful position */
+#top .background-layout {
+  position: relative;
+  display: flex;
+  height: 100%;
+}
+
+#top .background-layout .highlighted-text {
+  position: relative;
+  flex-basis: 50%;
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+#top .background-layout .highlighted-text .text-area {
+  color: white;
+}
+
+#top .background-layout .highlighted-text .text-area p {
+  color: #6b95e0;
+  margin-bottom: 15px;
+}
+
+#top .background-layout .highlighted-text .text-area h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+#top .background-layout .highlighted-text .text-area h1:nth-of-type(1) {
+  font-weight: 700;
+}
+#top .background-layout .highlighted-text .text-area h1:nth-of-type(2) {
+  margin-bottom: 2.5rem;
+}
+
+#top .background-layout .highlighted-text .text-area a:nth-of-type(1) {
+  border-radius: 5px;
+  background: linear-gradient(-135deg, #fa2b56 0%, #f91c3d 100%);
+  border: 0;
+  box-shadow: 17px 22px 51px 9px rgba(9, 9, 9, 0.4);
+  color: white;
+  margin-right: 10px;
+  padding: 20px;
+  padding: 11px 20px;
+}
+
+#top .background-layout .highlighted-text .text-area a {
+  color: #6b95e0;
+  border: 1px solid #6b95e0;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: 0.25s;
+}
+
+#top .background-layout .highlighted-text .text-area a:hover {
+  border-color: #fff;
+  color: #000;
+}
+
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em #fff;
+}
+
+#top .background-layout .highlighted-img {
+  position: relative;
+  flex-basis: 50%;
+}
+
+/* Shapes */
+#top .background-layout .highlighted-text .ellipse_8 {
+  background: url("../../img/Ellipse_8.png");
+  position: absolute;
+  top: 190px;
+  left: 230px;
+  /* background-size: 24rem; */
+  height: 150px;
+  width: 150px;
+  /* height: 100%; */
+  /* width: 100%; */
+  background-repeat: no-repeat;
+}
+
+#top .background-layout .highlighted-text .ellipse_8_copy {
+  background: url("../../img/Ellipse_8_copy.png");
+  position: absolute;
+  top: 420px;
+  right: 90px;
+  /* background-size: 24rem; */
+  height: 150px;
+  width: 150px;
+  /* height: 100%; */
+  /* width: 100%; */
+  background-repeat: no-repeat;
+}
+
+#top .background-layout .highlighted-text .ellipse_9 {
+  background: url("../../img/Ellipse_9.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* background-size: 24rem; */
+  height: 150px;
+  width: 158px;
+  /* height: 100%; */
+  /* width: 100%; */
+  background-repeat: no-repeat;
+}
+
+#top .background-layout .highlighted-text .ellipse_11 {
+  background: url("../../img/Ellipse_11.png");
+  position: absolute;
+  left: 150px;
+  top: 80px;
+  /* background-size: 24rem; */
+  height: 158px;
+  width: 150px;
+  /* height: 100%; */
+  /* width: 100%; */
+  background-repeat: no-repeat;
+}
+
+#top .background-layout .highlighted-img .shape1 {
+  background: url("../../img/shape1.png");
+  position: absolute;
+  left: -70px;
+  top: 490px;
+  /* background-size: 24rem; */
+  height: 158px;
+  width: 150px;
+  /* height: 100%; */
+  /* width: 100%; */
+  background-repeat: no-repeat;
+}
+
+#top .background-layout .highlighted-img .shape1_copy2 {
+  background: url("../../img/shape1Copy2.png");
+  position: absolute;
+  left: 60px;
+  top: 70px;
+  z-index: 1;
+  /* background-size: 24rem; */
+  height: 158px;
+  width: 150px;
+  /* height: 100%; */
+  /* width: 100%; */
+  background-repeat: no-repeat;
+}
+
+#top .background-layout .highlighted-img .ellipse_10 {
+  background: url("../../img/Ellipse_10.png");
+  position: absolute;
+  right: 0px;
+  top: 150px;
+  /* background-size: 24rem; */
+  height: 195px;
+  width: 225px;
+  /* height: 100%; */
+  /* width: 100%; */
+  background-repeat: no-repeat;
+}
+
+#top .background-layout .highlighted-img .ellipse_10_copy {
+  background: url("../../img/Ellipse_10_copy.png");
+  position: absolute;
+  right: -59px;
+  top: 370px;
+  height: 158px;
+  width: 140px;
+  background-repeat: no-repeat;
+}
+
+#top .background-layout .highlighted-img .ellipse_11_copy {
+  background: url("../../img/Ellipse_11_copy.png");
+  position: absolute;
+  right: 213px;
+  top: 480px;
+  z-index: 1;
+  height: 158px;
+  width: 160px;
+  background-repeat: no-repeat;
+}
+
+/* To put in rightful position */
+
 #top {
   /* background-color: #0d2764; */
   background-image: linear-gradient(to bottom, #123075 0%, #092056 100%);
+  height: 100vh;
+}
+#top:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
 #top .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
+  height: 100%;
   padding: 80px 0;
   align-items: center;
+  max-width: 1190px;
 }
 #top .info {
   padding: 15px;
