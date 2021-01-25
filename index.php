@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 <section id="top">
   <div class="container">
-    <div class="info">
+    <!-- <div class="info">
       <div class="blue-square"></div>
       <h1><?php echo get_bloginfo('name') ?></h1>
       <p>Web Developer</p>
@@ -12,35 +12,86 @@
       <div class="background-img">
 
       </div>
+    </div> -->
+    <div class="background-layout">
+      <div class="highlighted-text">
+        <div class="text-area">
+          <p>Introducing <?php echo get_bloginfo('name') ?></p>
+          <h1>Digital Design Agency</h1>
+          <h1>Easier than ever</h1>
+          <a href="#portfolio-section">View Latest</a>
+          <a href="">Contact Us</a>
+        </div>
+        <div class="ellipse_8"></div>
+        <div class="ellipse_8_copy"></div>
+        <div class="ellipse_9"></div>
+        <div class="ellipse_11"></div>
+      </div>
+      <div class="highlighted-img">
+        <div class="shape1"></div>
+        <div class="shape1_copy2"></div>
+        <div class="ellipse_10"></div>
+        <div class="ellipse_10_copy"></div>
+        <div class="ellipse_11_copy"></div>
+        <!-- <img src="<?php bloginfo('stylesheet_directory'); ?>/img/Ellipse_11_copy.png" alt="" srcset="" style="
+        position: absolute;
+        right: 180px;
+        top: 480px;
+        z-index: 1;
+        "> -->
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="597" height="788" viewBox="0 0 697 788" style=" 
+          position: absolute;
+          left: 50px;">
+          <defs>
+            <mask id="i8tpb" width="2" height="2" x="-1" y="-1">
+              <path fill="#fff" d="M18 4h570v662H18z" />
+              <path d="M34.596 209.763S99.786-3.8 273.824 4.23c0 0 78.346 1.605 93.298 86.71 14.952 85.104-15.55 142.911 136.36 263.34 0 0 183.607 156.293 9.569 268.695 0 0-197.363 123.107-371.999-47.102C-33.583 405.664 26.223 237.596 34.596 209.763z" />
+            </mask>
+            <filter id="i8tpa" width="794.2" height="899.1" x="-71" y="-85" filterUnits="userSpaceOnUse">
+              <feOffset dx="46.2" dy="59.1" in="SourceGraphic" result="FeOffset1023Out" />
+              <feGaussianBlur in="FeOffset1023Out" result="FeGaussianBlur1024Out" stdDeviation="31.6 31.6" />
+            </filter>
+          </defs>
+          <g>
+            <g>
+              <g filter="url(#i8tpa)">
+                <path fill="none" d="M34.596 209.763S99.786-3.8 273.824 4.23c0 0 78.346 1.605 93.298 86.71 14.952 85.104-15.55 142.911 136.36 263.34 0 0 183.607 156.293 9.569 268.695 0 0-197.363 123.107-371.999-47.102C-33.583 405.664 26.223 237.596 34.596 209.763z" mask="url(&quot;#i8tpb&quot;)" />
+                <path fill="#432763" fill-opacity=".26" d="M34.596 209.763S99.786-3.8 273.824 4.23c0 0 78.346 1.605 93.298 86.71 14.952 85.104-15.55 142.911 136.36 263.34 0 0 183.607 156.293 9.569 268.695 0 0-197.363 123.107-371.999-47.102C-33.583 405.664 26.223 237.596 34.596 209.763z" />
+              </g>
+              <path fill="#11347c" d="M34.596 209.763S99.786-3.8 273.824 4.23c0 0 78.346 1.605 93.298 86.71 14.952 85.104-15.55 142.911 136.36 263.34 0 0 183.607 156.293 9.569 268.695 0 0-197.363 123.107-371.999-47.102C-33.583 405.664 26.223 237.596 34.596 209.763z" />
+            </g>
+          </g>
+        </svg> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="597" height="788" viewBox="0 0 697 788" style=" 
+          position: absolute;
+          left: 50px;">
+          <defs>
+            <mask id="i8tpb" width="2" height="2" x="-1" y="-1">
+              <path fill="#fff" d="M18 4h570v662H18z" />
+              <path d="M34.596 209.763S99.786-3.8 273.824 4.23c0 0 78.346 1.605 93.298 86.71 14.952 85.104-15.55 142.911 136.36 263.34 0 0 183.607 156.293 9.569 268.695 0 0-197.363 123.107-371.999-47.102C-33.583 405.664 26.223 237.596 34.596 209.763z" />
+            </mask>
+            <filter id="i8tpa" width="794.2" height="899.1" x="-71" y="-85" filterUnits="userSpaceOnUse">
+              <feOffset dx="46.2" dy="59.1" in="SourceGraphic" result="FeOffset1023Out" />
+              <feGaussianBlur in="FeOffset1023Out" result="FeGaussianBlur1024Out" stdDeviation="31.6 31.6" />
+            </filter>
+            <pattern id="img1" patternUnits="userSpaceOnUse" width="697" height="788">
+              <image href="https://insidetema.com/wp-content/uploads/2018/05/170717100550_1_900x600.jpg" x="0" y="0" width="697" height="788" />
+            </pattern>
+          </defs>
+          <g>
+            <g>
+              <g filter="url(#i8tpa)">
+                <path fill="none" d="M34.596 209.763S99.786-3.8 273.824 4.23c0 0 78.346 1.605 93.298 86.71 14.952 85.104-15.55 142.911 136.36 263.34 0 0 183.607 156.293 9.569 268.695 0 0-197.363 123.107-371.999-47.102C-33.583 405.664 26.223 237.596 34.596 209.763z" mask="url(&quot;#i8tpb&quot;)" />
+                <path fill="#432763" fill-opacity=".26" d="M34.596 209.763S99.786-3.8 273.824 4.23c0 0 78.346 1.605 93.298 86.71 14.952 85.104-15.55 142.911 136.36 263.34 0 0 183.607 156.293 9.569 268.695 0 0-197.363 123.107-371.999-47.102C-33.583 405.664 26.223 237.596 34.596 209.763z" />
+              </g>
+              <path fill="#11347c" d="M34.596 209.763S99.786-3.8 273.824 4.23c0 0 78.346 1.605 93.298 86.71 14.952 85.104-15.55 142.911 136.36 263.34 0 0 183.607 156.293 9.569 268.695 0 0-197.363 123.107-371.999-47.102C-33.583 405.664 26.223 237.596 34.596 209.763z" />
+              <path fill="url(#img1)" d="M34.596 209.763S99.786-3.8 273.824 4.23c0 0 78.346 1.605 93.298 86.71 14.952 85.104-15.55 142.911 136.36 263.34 0 0 183.607 156.293 9.569 268.695 0 0-197.363 123.107-371.999-47.102C-33.583 405.664 26.223 237.596 34.596 209.763z" />
+            </g>
+          </g>
+        </svg>
+      </div>
     </div>
   </div>
-  <!-- <div class="testsec">
-    <svg xmlns="http://www.w3.org/2000/svg" width="597" height="788" viewBox="0 0 697 788">
-      <defs>
-        <mask id="i8tpb" width="2" height="2" x="-1" y="-1">
-          <path fill="#fff" d="M18 4h570v662H18z" />
-          <path d="M34.596 209.763S99.786-3.8 273.824 4.23c0 0 78.346 1.605 93.298 86.71 14.952 85.104-15.55 142.911 136.36 263.34 0 0 183.607 156.293 9.569 268.695 0 0-197.363 123.107-371.999-47.102C-33.583 405.664 26.223 237.596 34.596 209.763z" />
-        </mask>
-        <filter id="i8tpa" width="794.2" height="899.1" x="-71" y="-85" filterUnits="userSpaceOnUse">
-          <feOffset dx="46.2" dy="59.1" in="SourceGraphic" result="FeOffset1023Out" />
-          <feGaussianBlur in="FeOffset1023Out" result="FeGaussianBlur1024Out" stdDeviation="31.6 31.6" />
-        </filter>
-        <pattern id="img1" patternUnits="userSpaceOnUse" width="697" height="788">
-          <image href="https://insidetema.com/wp-content/uploads/2018/05/170717100550_1_900x600.jpg" x="0" y="0" width="697" height="788" />
-        </pattern>
-      </defs>
-      <g>
-        <g>
-          <g filter="url(#i8tpa)">
-            <path fill="none" d="M34.596 209.763S99.786-3.8 273.824 4.23c0 0 78.346 1.605 93.298 86.71 14.952 85.104-15.55 142.911 136.36 263.34 0 0 183.607 156.293 9.569 268.695 0 0-197.363 123.107-371.999-47.102C-33.583 405.664 26.223 237.596 34.596 209.763z" mask="url(&quot;#i8tpb&quot;)" />
-            <path fill="#432763" fill-opacity=".26" d="M34.596 209.763S99.786-3.8 273.824 4.23c0 0 78.346 1.605 93.298 86.71 14.952 85.104-15.55 142.911 136.36 263.34 0 0 183.607 156.293 9.569 268.695 0 0-197.363 123.107-371.999-47.102C-33.583 405.664 26.223 237.596 34.596 209.763z" />
-          </g>
-          <path fill="#11347c" d="M34.596 209.763S99.786-3.8 273.824 4.23c0 0 78.346 1.605 93.298 86.71 14.952 85.104-15.55 142.911 136.36 263.34 0 0 183.607 156.293 9.569 268.695 0 0-197.363 123.107-371.999-47.102C-33.583 405.664 26.223 237.596 34.596 209.763z" />
-          <path fill="url(#img1)" d="M34.596 209.763S99.786-3.8 273.824 4.23c0 0 78.346 1.605 93.298 86.71 14.952 85.104-15.55 142.911 136.36 263.34 0 0 183.607 156.293 9.569 268.695 0 0-197.363 123.107-371.999-47.102C-33.583 405.664 26.223 237.596 34.596 209.763z" />
-        </g>
-      </g>
-    </svg>
-  </div> -->
 </section>
 <section id="services-section">
   <div class="container">

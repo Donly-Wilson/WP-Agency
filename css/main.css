@@ -18,7 +18,13 @@ body {
   max-width: 1150px;
   margin: 0 auto;
 }
-
+.dot {
+  height: 9px;
+  width: 9px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
 header {
   display: flex;
   padding: 20px;
@@ -26,6 +32,8 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
 }
 header .logo {
   font-size: 1.5rem;
@@ -71,6 +79,12 @@ header .menu-btn {
   display: none;
   cursor: pointer;
 }
+
+.nav-scrolled {
+  background: black;
+  padding: 8px 20px;
+}
+
 .mobile-menu {
   display: none;
   background: #fff;

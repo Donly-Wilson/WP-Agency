@@ -31,6 +31,7 @@
         ?>
         <div class="logo">
             <a href="/" class="name"><?php echo arconym(get_bloginfo('name')); ?>
+                <span class="dot"></span>
         </div>
         </div>
         <div class="header-menu">

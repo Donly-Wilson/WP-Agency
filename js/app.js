@@ -8,6 +8,26 @@ menuBtn[0].addEventListener('click', clickedBtn);
 
 console.log(menuBtn[0]);
 
+/*----------------Header---------------*/
+const header  = document.querySelector("header");
+const topSection  = document.querySelector("#top");
+
+const topSectionOptions = {
+  rootMargin: "-140px 0px 0px 0px"
+};
+
+const topSectionObserver = new IntersectionObserver(function(entries, topSectionObserver){
+  entries.forEach( entry =>{
+    if(!entry.isIntersecting){
+      header.classList.add("nav-scrolled");
+    }else{
+      header.classList.remove("nav-scrolled");
+    }
+  })
+}, topSectionOptions)
+
+topSectionObserver.observe(topSection);
+
 /*----------------Testimonials---------------*/
 
 //import these functions from lit-html library

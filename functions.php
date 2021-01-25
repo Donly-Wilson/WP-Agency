@@ -37,3 +37,8 @@ function myportfolio_widgets_init()
 }
 //Add function to wordpress
 add_action('widgets_init', 'myportfolio_widgets_init');
+
+// [template_dir image="something.jpg"]
+add_shortcode('template_dir', function ($atts) {
+    return get_template_directory_uri() . '/img/' . $atts['image'];
+});
