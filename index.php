@@ -2,17 +2,6 @@
 <?php get_header(); ?>
 <section id="top">
   <div class="container">
-    <!-- <div class="info">
-      <div class="blue-square"></div>
-      <h1><?php echo get_bloginfo('name') ?></h1>
-      <p>Web Developer</p>
-      <a href="#portfolio-section">Latest Works</a>
-    </div>
-    <div class="img">
-      <div class="background-img">
-
-      </div>
-    </div> -->
     <div class="background-layout">
       <div class="highlighted-text">
         <div class="text-area">
@@ -20,7 +9,7 @@
           <h1>Digital Design Agency</h1>
           <h1>Easier than ever</h1>
           <a href="#portfolio-section">View Latest</a>
-          <a href="">Contact Us</a>
+          <a href="" class="fill">Contact Us</a>
         </div>
         <div class="ellipse_8"></div>
         <div class="ellipse_8_copy"></div>
@@ -199,7 +188,7 @@
 <section id="experience-section">
   <div class="container">
     <div class="large-title">
-      Experience
+      Why Choose Us
     </div>
     <div class="experience-container">
       <div class="large-icons">
