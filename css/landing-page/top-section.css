@@ -206,16 +206,23 @@
   background-repeat: no-repeat;
 }
 
+#top .background-layout .highlighted-img .featured_ellipse {
+  position: absolute;
+  left: 50px;
+  width: 597;
+  height: 788;
+}
+
 /* Tablets */
 @media only screen and (max-width: 960px) {
   #top .container {
     padding: 0 0 80px;
   }
-  #top .info .blue-square {
-    /* display: none; */
+  #top .highlighted-text {
+    flex-basis: 100%;
   }
-  #top .img .background-img {
-    height: 100vh;
+  #top .highlighted-img {
+    flex-basis: 100%;
   }
 }
 /* Phones */
@@ -223,10 +230,81 @@
   #top .container {
     padding: 0 0 80px;
   }
-  #top .info .blue-square {
-    display: none;
+  #top .background-layout {
+    padding-top: 50px;
+    flex-direction: column;
   }
-  #top .img .background-img {
-    height: 100vh;
+
+  #top .highlighted-text {
+    flex-basis: 100%;
+    z-index: 1;
+  }
+
+  #top .background-layout .highlighted-text .text-area p {
+    margin-bottom: 10px;
+  }
+
+  #top .background-layout .highlighted-text .text-area h1 {
+    font-size: 2rem;
+  }
+
+  #top .background-layout .highlighted-text .text-area h1:nth-of-type(2) {
+    margin-bottom: 2.2rem;
+  }
+
+  #top .background-layout .highlighted-text .text-area a {
+    padding: 9px 13px;
+    font-size: 14px;
+  }
+
+  #top .background-layout .highlighted-text .text-area a:nth-of-type(1) {
+    padding: 10px 13px;
+    font-size: 14px;
+  }
+
+  #top .background-layout .highlighted-text .ellipse_8 {
+    background-size: 6rem;
+  }
+  #top .background-layout .highlighted-text .ellipse_8_copy {
+    background-size: 6rem;
+  }
+
+  #top .background-layout .highlighted-text .ellipse_9 {
+    background-size: 6rem;
+  }
+
+  #top .background-layout .highlighted-text .ellipse_11 {
+    background-size: 6rem;
+  }
+
+  #top .highlighted-img {
+    flex-basis: 100%;
+  }
+
+  #top .background-layout .highlighted-img .shape1 {
+    background-size: 6rem;
+  }
+
+  #top .background-layout .highlighted-img .shape1_copy2 {
+    background-size: 6rem;
+  }
+
+  #top .background-layout .highlighted-img .ellipse_10 {
+    background-size: 6rem;
+  }
+
+  #top .background-layout .highlighted-img .ellipse_10_copy {
+    background-size: 6rem;
+  }
+
+  #top .background-layout .highlighted-img .ellipse_11_copy {
+    background-size: 6rem;
+  }
+
+  #top .background-layout .highlighted-img .featured_ellipse {
+    position: absolute;
+    left: 24px;
+    width: 400;
+    height: 387;
   }
 }

@@ -6,6 +6,7 @@
     <title><?php wp_title() ?></title>
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
     <!-- Get right location for WP css -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/main.css?counter=<?php echo time(); ?>">
 

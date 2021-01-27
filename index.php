@@ -51,9 +51,7 @@
             </g>
           </g>
         </svg> -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="597" height="788" viewBox="0 0 697 788" style=" 
-          position: absolute;
-          left: 50px;">
+        <svg class="featured_ellipse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 697 788">
           <defs>
             <mask id="i8tpb" width="2" height="2" x="-1" y="-1">
               <path fill="#fff" d="M18 4h570v662H18z" />
