@@ -13,6 +13,9 @@
             <i class="fab fa-instagram"></i>
         </a>
     </div>
+    <div class="form">
+        <input type="text">
+    </div>
     <h5>Donly Wilson</h5>
     <h6>Web Developer</h6>
 </footer>
