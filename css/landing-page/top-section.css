@@ -13,16 +13,6 @@
   background: rgba(0, 0, 0, 0.5);
 }
 
-#top:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-}
-
 #top .container {
   display: grid;
   /* grid-template-columns: 1fr 1fr; */
@@ -320,7 +310,8 @@
 
   #top .background-layout .highlighted-img .ellipse_10 {
     background-size: 6rem;
-    right: 45px;
+    /* right: 45px; */
+    left: 210px;
     top: 70px;
     height: 80px;
     width: 100px;
@@ -328,13 +319,15 @@
 
   #top .background-layout .highlighted-img .ellipse_10_copy {
     background-size: 5rem;
-    right: -59px;
+    /* right: -59px; */
+    left: 275px;
     top: 180px;
   }
 
   #top .background-layout .highlighted-img .ellipse_11_copy {
     background-size: 6rem;
-    right: 70px;
+    /* right: 70px; */
+    left: 130px;
     top: 250px;
   }
 
