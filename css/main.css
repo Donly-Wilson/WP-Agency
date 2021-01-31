@@ -8,6 +8,7 @@
 @import "landing-page/testimonials-section.css";
 @import "portfolio/portfolio-projects.css";
 @import "templates/page.css";
+@import "templates/about-page.css";
 @import "footer-section.css";
 
 body {
