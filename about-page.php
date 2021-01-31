@@ -10,7 +10,7 @@ get_header();
         <div class="team">
             <div class="team-header">
                 <h3>Our Amazing Team</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita iste commodi nisi.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita iste commodi nisi adipisicing elit. Expedita .</p>
             </div>
             <div class="team-gallery">
                 <div class="team-gallery_photo">
@@ -18,7 +18,7 @@ get_header();
                     <div class="photo"></div>
                     <div class="photo-info">
                         <span class="name">Macy Killy</span>
-                        <span class="profestion">Designer</span>
+                        <span class="profession">Designer</span>
                     </div>
                 </div>
                 <div class="team-gallery_photo">
@@ -26,7 +26,7 @@ get_header();
                     <div class="photo"></div>
                     <div class="photo-info">
                         <span class="name">Macy Killy</span>
-                        <span class="profestion">Designer</span>
+                        <span class="profession">Designer</span>
                     </div>
                 </div>
                 <div class="team-gallery_photo">
@@ -34,7 +34,7 @@ get_header();
                     <div class="photo"></div>
                     <div class="photo-info">
                         <span class="name">Macy Killy</span>
-                        <span class="profestion">Designer</span>
+                        <span class="profession">Designer</span>
                     </div>
                 </div>
                 <div class="team-gallery_photo">
@@ -42,7 +42,7 @@ get_header();
                     <div class="photo"></div>
                     <div class="photo-info">
                         <span class="name">Macy Killy</span>
-                        <span class="profestion">Designer</span>
+                        <span class="profession">Designer</span>
                     </div>
                 </div>
             </div>

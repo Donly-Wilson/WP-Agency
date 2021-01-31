@@ -6,6 +6,13 @@
 
 #about .container .team .team-header {
   padding-bottom: 6rem;
+  text-align: center;
+}
+
+#about .container .team .team-header h3 {
+  font-weight: 700;
+  font-size: 3rem;
+  padding-bottom: 2rem;
 }
 
 #about .container .team .team-gallery {
@@ -51,6 +58,16 @@
 }
 
 #about .container .team .team-gallery .team-gallery_photo .photo-info .name {
-  font-weight: 600;
+  font-weight: 700;
   padding: 0 0 0 10px;
+}
+
+#about
+  .container
+  .team
+  .team-gallery
+  .team-gallery_photo
+  .photo-info
+  .profession {
+  color: #555555;
 }
