@@ -21,6 +21,30 @@ get_header();
                         <span class="profestion">Designer</span>
                     </div>
                 </div>
+                <div class="team-gallery_photo">
+                    <!-- <img src="" alt=""> -->
+                    <div class="photo"></div>
+                    <div class="photo-info">
+                        <span class="name">Macy Killy</span>
+                        <span class="profestion">Designer</span>
+                    </div>
+                </div>
+                <div class="team-gallery_photo">
+                    <!-- <img src="" alt=""> -->
+                    <div class="photo"></div>
+                    <div class="photo-info">
+                        <span class="name">Macy Killy</span>
+                        <span class="profestion">Designer</span>
+                    </div>
+                </div>
+                <div class="team-gallery_photo">
+                    <!-- <img src="" alt=""> -->
+                    <div class="photo"></div>
+                    <div class="photo-info">
+                        <span class="name">Macy Killy</span>
+                        <span class="profestion">Designer</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
