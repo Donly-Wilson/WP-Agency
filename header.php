@@ -42,6 +42,7 @@
             <a href="/#experience-section">Experience</a>
             <a href="/#blog-section">Blog</a>
             <a href="/#testimonials-section">Testimonials</a>
+            <a href="/about">about</a>
         </div>
         <div class="menu-btn">
             <i class="fas fa-bars"></i>
@@ -54,4 +55,5 @@
         <a href="/#experience-section">Experience</a>
         <a href="/#blog-section">Blog</a>
         <a href="/#testimonials-section">Testimonials</a>
+        <a href="/about">about</a>
     </div>
