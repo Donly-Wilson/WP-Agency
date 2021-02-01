@@ -53,7 +53,7 @@
 }
 
 #services-section .services-container .box h5 {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -61,7 +61,7 @@
 }
 
 #services-section .services-container .box p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   /* color: #b3b3b3; */
   color: #919191;
