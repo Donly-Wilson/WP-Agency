@@ -8,6 +8,7 @@ get_header();
 <div id="about">
     <div class="about-description">
         <div class="container">
+            <h3>Who Are We?</h3>
             <p>We are Impression, a multi-award winning, strategic-thinking team of digital marketing experts with a creative edge. We thrive on creating intelligent, integrated creative marketing campaigns and seamless customer journeys. We’re passionate about doing the best work we can and pushing new technology to its limits. And we achieve results to be proud of.</p>
 
             <p>Your business can benefit from our range of digital marketing services which we already supply to clients across the UK and overseas. As an ambitious agency, we set ourselves big goals and will only work with companies when we believe we can make a tangible different to their bottom line.</p>
