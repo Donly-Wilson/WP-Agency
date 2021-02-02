@@ -16,7 +16,7 @@ footer .social-container a {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   display: inline-block;
-  padding: 10px;
+  padding: 10px 0;
 }
 footer .social-container a:hover {
   color: rgba(255, 53, 53, 1);
@@ -50,12 +50,18 @@ footer .contact {
   display: flex;
 }
 
+footer .contact .contact-info {
+  padding: 50px 20px;
+  width: 400px;
+  height: 586px;
+}
+
 footer .contact .contact-info .email,
 footer .contact .contact-info .phone,
 footer .contact .contact-info .address {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: 1.7rem;
 }
 
 footer .contact .contact-info div span {
@@ -63,7 +69,8 @@ footer .contact .contact-info div span {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 1rem;
+  line-height: 2;
+  margin-bottom: 0.4rem;
 }
 
 footer .contact .contact-info div span:nth-child(1) {
@@ -159,4 +166,21 @@ footer .contact .contact-form h3 {
 
 .form-control:focus + span + .border {
   transform: scaleX(1);
+}
+
+footer .contact .contact-form input[type="submit"] {
+  border: none;
+  width: 162px;
+  height: 51px;
+  border-bottom: 2px solid #666666;
+  margin-left: auto;
+  margin-top: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: 0 0;
+  color: #666666;
+  text-transform: uppercase;
 }
