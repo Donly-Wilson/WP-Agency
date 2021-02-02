@@ -69,9 +69,8 @@
                 <label for="message" class="form-group">
                     <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
                     <span class="form-group_name">Message</span>
-                    <span class="border"></span>
                 </label>
-                <input type="submit" name="" id="">
+                <input type="submit" name="" id="" value="Make My Enquiry">
             </form>
         </div>
     </div>
