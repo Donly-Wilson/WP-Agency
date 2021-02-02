@@ -49,6 +49,27 @@ footer .title {
 footer .contact {
   display: flex;
 }
+
+footer .contact .contact-info .email,
+footer .contact .contact-info .phone,
+footer .contact .contact-info .address {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+footer .contact .contact-info div span {
+  color: #13161d;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+footer .contact .contact-info div span:nth-child(1) {
+  color: #666666;
+}
+
 footer .contact .contact-form {
   display: flex;
   flex-direction: column;
