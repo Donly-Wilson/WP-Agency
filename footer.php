@@ -35,12 +35,7 @@
             </div>
             <form class="contact-form">
                 <h3>Contact Us</h3>
-                <!-- contact 7 form -->
-                <?php
-                // echo do_shortcode(
-                //     '[contact-form-7 id="12" title="Contact form 1"]'
-                // );
-                ?>
+
                 <label for="name" class="form-group">
                     <input type="text" class="form-control">
                     <span class="form-group_name">Name</span>
@@ -76,4 +71,13 @@
     </div>
     <h5>Donly Wilson</h5>
     <h6>Web Developer</h6>
+    <!-- contact 7 form -->
+    <!-- <div class="div">
+
+        <?php
+        echo do_shortcode(
+            '[contact-form-7 id="12" title="Contact form 1"]'
+        );
+        ?>
+    </div> -->
 </footer>

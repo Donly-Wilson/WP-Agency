@@ -102,13 +102,6 @@ footer .contact .contact-form h3 {
   margin-bottom: 3rem;
 }
 
-/* Tablets */
-@media only screen and (max-width: 960px) {
-}
-/* Phones */
-@media only screen and (max-width: 767px) {
-}
-
 .form-group {
   position: relative;
   display: block;
@@ -185,4 +178,30 @@ footer .contact .contact-form input[type="submit"] {
   background: 0 0;
   color: #16171b;
   text-transform: uppercase;
+}
+
+/* Tablets */
+@media only screen and (max-width: 960px) {
+}
+/* Phones */
+@media only screen and (max-width: 767px) {
+  footer {
+    padding: 0 15px 100px;
+  }
+  footer .contact {
+    flex-direction: column-reverse;
+  }
+
+  footer .contact .contact-info {
+    width: auto;
+  }
+
+  footer .social-container a {
+    font-size: 2rem;
+  }
+
+  footer .contact .contact-form {
+    position: static;
+    width: auto;
+  }
 }
