@@ -19,9 +19,9 @@ const topSectionOptions = {
 const topSectionObserver = new IntersectionObserver(function(entries, topSectionObserver){
   entries.forEach( entry =>{
     if(!entry.isIntersecting){
-      header.classList.add("nav-scrolled");
+      header.classList.remove("nav-transparent");
     }else{
-      header.classList.remove("nav-scrolled");
+      header.classList.add("nav-transparent");
     }
   })
 }, topSectionOptions)

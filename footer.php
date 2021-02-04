@@ -72,12 +72,12 @@
     <h5>Donly Wilson</h5>
     <h6>Web Developer</h6>
     <!-- contact 7 form -->
-    <!-- <div class="div">
+    <div class="div">
 
         <?php
         echo do_shortcode(
             '[contact-form-7 id="12" title="Contact form 1"]'
         );
         ?>
-    </div> -->
+    </div>
 </footer>
