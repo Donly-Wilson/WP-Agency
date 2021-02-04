@@ -72,12 +72,15 @@
     <h5>Donly Wilson</h5>
     <h6>Web Developer</h6>
     <!-- contact 7 form -->
-    <div class="div">
+    <div class="contact">
 
-        <?php
-        echo do_shortcode(
-            '[contact-form-7 id="12" title="Contact form 1"]'
-        );
-        ?>
+        <form class="wp-form">
+            <h3>Contact Us</h3>
+            <?php
+            echo do_shortcode(
+                '[wpforms id="71"]'
+            );
+            ?>
+        </form>
     </div>
 </footer>
