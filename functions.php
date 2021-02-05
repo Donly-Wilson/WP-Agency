@@ -42,3 +42,55 @@ add_action('widgets_init', 'myportfolio_widgets_init');
 add_shortcode('template_dir', function ($atts) {
     return get_template_directory_uri() . '/img/' . $atts['image'];
 });
+
+
+/**
+ * Action fires before the form is displayed to determine position of certain form elements such as labels.
+ *
+ * @link   https://wpforms.com/developers/wpforms_display_field_after/
+ * 
+ * @param  array    $fields      Sanitized entry field values/properties.
+ * @param  array    $form_data   Form settings/data.
+ *
+ * @return array
+ */
+
+
+/* First remove the label from appearing above the form field for form 71 */
+
+function wpf_dev_display_field_before($field, $form_data)
+{
+
+    if (absint($form_data['id']) !== 71) {
+        return;
+    }
+    remove_action('wpforms_display_field_before', array(wpforms()->frontend, 'field_label'), 15);
+}
+
+add_action('wpforms_display_field_before', 'wpf_dev_display_field_before', 10, 2);
+
+/* Now position the label to appear below the form field for form 71 */
+
+function wpf_dev_display_field_after($field, $form_data)
+{
+    if (absint($form_data['id']) !== 71) {
+        return;
+    }
+
+    wpforms()->frontend->field_label($field, $form_data);
+}
+
+add_action('wpforms_display_field_after', 'wpf_dev_display_field_after', 1, 2);
+/* End of repostioning label and input*/
+
+/**
+ * Modify the required field indicator
+ *
+ * @link https://wpforms.com/developers/how-to-change-required-field-indicator/
+ *
+ */
+function wpf_dev_required_indicator($text)
+{
+    return '';
+}
+add_filter('wpforms_get_field_required_label', 'wpf_dev_required_indicator');

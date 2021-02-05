@@ -146,17 +146,19 @@ footer .contact .contact-form h3 {
   background: lightcoral;
 }
 
-.form-control:focus {
+.form-control:focus,
+.form-control:valid {
   border-bottom: 2px solid lightcoral;
+  color: lightcoral;
 }
 
 /* .form-group .form-group_name:focus {
   color: lightcoral;
 } */
 
-.form-control:focus + span {
+.form-control:focus + span,
+.form-control:valid + span {
   transform: translateY(-22px) scale(0.8);
-  color: lightcoral;
 }
 
 .form-control:focus + span + .border {
@@ -223,6 +225,11 @@ footer .contact .wp-form {
   box-shadow: 0px 9px 27px 1px rgb(0 0 0 / 16%);
 }
 
+footer .contact .wp-form .wpforms-container,
+footer .contact .wp-form .wpforms-container-full {
+  margin: 0;
+}
+
 footer .contact .wp-form h3 {
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -280,24 +287,29 @@ footer .contact .wp-form h3 {
 }
 
 .form-group input:focus,
-.form-group textarea:focus {
+.form-group input:valid,
+.form-group textarea:focus,
+.form-group textarea:valid {
   border-bottom: 2px solid lightcoral;
+  color: lightcoral;
 }
 
 /* .form-group .form-group_name:focus {
   color: lightcoral;
 } */
 
-.form-group input:focus + label {
+.form-group input:focus + label,
+.form-group input:valid + label,
+.form-group textarea:focus + label,
+.form-group textarea:valid + label {
   transform: translateY(-22px) scale(0.8);
-  color: lightcoral;
 }
 
-.form-control:focus + span + .border {
+.form-group input:focus + label + ::after {
   transform: scaleX(1);
 }
 
-footer .contact .wp-form input[type="submit"] {
+footer .contact .wp-form button[type="submit"] {
   border: none;
   /* width: 162px; */
   height: 35px;

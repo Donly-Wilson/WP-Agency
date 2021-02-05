@@ -33,54 +33,50 @@
                     </a>
                 </div>
             </div>
-            <form class="contact-form">
+            <!-- <form class="contact-form">
                 <h3>Contact Us</h3>
 
                 <label for="name" class="form-group">
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" required>
                     <span class="form-group_name">Name</span>
                     <span class="border"></span>
                 </label>
                 <label for="email" class="form-group">
-                    <input type="email" class="form-control">
+                    <input type="email" class="form-control" required>
                     <span class="form-group_name">Email</span>
                     <span class="border"></span>
                 </label>
                 <label for="phone" class="form-group">
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" required>
                     <span class="form-group_name">Phone</span>
                     <span class="border"></span>
                 </label>
                 <label for="company" class="form-group">
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" required>
                     <span class="form-group_name">Company</span>
                     <span class="border"></span>
                 </label>
                 <label for="website" class="form-group">
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" required>
                     <span class="form-group_name">Website</span>
                     <span class="border"></span>
                 </label>
                 <label for="message" class="form-group">
-                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" class="form-control" required></textarea>
                     <span class="form-group_name">Message</span>
                 </label>
                 <input type="submit" name="" id="" value="Make My Enquiry">
-            </form>
+            </form> -->
+            <div class="wp-form">
+                <h3>Contact Us</h3>
+                <?php
+                echo do_shortcode(
+                    '[wpforms id="71" title="false" description="false"]'
+                );
+                ?>
+            </div>
         </div>
     </div>
     <h5>Donly Wilson</h5>
     <h6>Web Developer</h6>
-    <!-- contact 7 form -->
-    <div class="contact">
-
-        <form class="wp-form">
-            <h3>Contact Us</h3>
-            <?php
-            echo do_shortcode(
-                '[wpforms id="71"]'
-            );
-            ?>
-        </form>
-    </div>
 </footer>
