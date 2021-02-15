@@ -36,13 +36,13 @@
         </div>
         </div>
         <div class="header-menu">
-            <a href="/">Home</a>
-            <a href="/#services-section">Services</a>
-            <a href="/#portfolio-section">Portfolio</a>
-            <a href="/#experience-section">Experience</a>
-            <a href="/#blog-section">Blog</a>
-            <a href="/#testimonials-section">Testimonials</a>
-            <a href="/about">about</a>
+            <a href="/" data-text="Home">Home</a>
+            <a href="/#services-section" data-text="Services">Services</a>
+            <a href="/#portfolio-section" data-text="Portfolio">Portfolio</a>
+            <a href="/#experience-section" data-text="Experience">Experience</a>
+            <a href="/#blog-section" data-text="Blog">Blog</a>
+            <a href="/#testimonials-section" data-text="Testimonials">Testimonials</a>
+            <a href="/about" data-text="about">about</a>
         </div>
         <div class="menu-btn">
             <i class="fas fa-bars"></i>
