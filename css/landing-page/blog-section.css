@@ -14,7 +14,7 @@
 #blog-section .blog-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 588px 588px;
+  grid-template-rows: auto;
   grid-gap: 15px;
   overflow: hidden;
 }
@@ -23,6 +23,7 @@
   transition: all 0.4s ease-in-out;
   cursor: pointer;
   height: 100%;
+  min-height: 588px;
   overflow: hidden;
 }
 #blog-section .blog-container .post .post-img {
