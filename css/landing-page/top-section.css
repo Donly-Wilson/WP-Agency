@@ -112,6 +112,7 @@
   /* background-size: 24rem; */
   height: 150px;
   width: 150px;
+  transform: scale(0.9);
   /* height: 100%; */
   /* width: 100%; */
   background-repeat: no-repeat;
@@ -125,6 +126,7 @@
   /* background-size: 24rem; */
   height: 150px;
   width: 150px;
+  transform: scale(0.8);
   /* height: 100%; */
   /* width: 100%; */
   background-repeat: no-repeat;
@@ -138,6 +140,7 @@
   /* background-size: 24rem; */
   height: 150px;
   width: 158px;
+  transform: scale(0.9);
   /* height: 100%; */
   /* width: 100%; */
   background-repeat: no-repeat;
@@ -146,11 +149,12 @@
 #top .background-layout .highlighted-text .ellipse_11 {
   background: url("../../img/Ellipse_11.png");
   position: absolute;
-  left: 80px;
-  top: -130px;
+  left: 90px;
+  top: -125px;
   /* background-size: 24rem; */
   height: 158px;
   width: 150px;
+  transform: scale(0.9);
   /* height: 100%; */
   /* width: 100%; */
   background-repeat: no-repeat;
@@ -164,6 +168,7 @@
   /* background-size: 24rem; */
   height: 158px;
   width: 150px;
+  transform: scale(0.8);
   /* height: 100%; */
   /* width: 100%; */
   background-repeat: no-repeat;
@@ -178,6 +183,7 @@
   /* background-size: 24rem; */
   height: 158px;
   width: 150px;
+  transform: scale(0.9);
   /* height: 100%; */
   /* width: 100%; */
   background-repeat: no-repeat;
@@ -186,11 +192,12 @@
 #top .background-layout .highlighted-img .ellipse_10 {
   background: url("../../img/Ellipse_10.png");
   position: absolute;
-  right: 62px;
+  right: 72px;
   top: 150px;
   /* background-size: 24rem; */
   height: 195px;
   width: 225px;
+  transform: scale(0.9);
   /* height: 100%; */
   /* width: 100%; */
   background-repeat: no-repeat;
@@ -199,10 +206,11 @@
 #top .background-layout .highlighted-img .ellipse_10_copy {
   background: url("../../img/Ellipse_10_copy.png");
   position: absolute;
-  right: -20px;
-  top: 370px;
-  height: 158px;
-  width: 140px;
+  right: 13px;
+  top: 365px;
+  height: 148px;
+  width: 130px;
+  transform: scale(0.8);
   background-repeat: no-repeat;
 }
 
@@ -214,12 +222,13 @@
   z-index: 2;
   height: 158px;
   width: 160px;
+  transform: scale(0.8);
   background-repeat: no-repeat;
 }
 
 #top .background-layout .highlighted-img .featured_ellipse {
   position: relative;
-  z-index:1;
+  z-index: 1;
   width: 597px;
   height: 788px;
 }
