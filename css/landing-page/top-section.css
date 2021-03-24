@@ -238,11 +238,17 @@
   #top .container {
     /* padding: 0 0 80px; */
   }
-  #top .highlighted-text {
+  #top .highlighted-area {
     flex-basis: 100%;
   }
+
+  #top .highlighted-area .highlighted-text .text-area {
+    margin-bottom: 0;
+  }
+
   #top .highlighted-img {
     flex-basis: 100%;
+    height: 100%;
   }
 }
 /* Phones */
@@ -256,7 +262,7 @@
     flex-direction: column;
   }
 
-  #top .highlighted-text {
+  #top .highlighted-area {
     flex-basis: 100%;
     z-index: 1;
   }
@@ -308,9 +314,9 @@
     width: 150px; */
   }
 
-  #top .highlighted-img {
+  /* #top .highlighted-img {
     flex-basis: 100%;
-  }
+  } */
 
   #top .background-layout .highlighted-img .shape1 {
     background-size: 6rem;
