@@ -3,6 +3,7 @@
 <section id="top">
   <div class="container">
     <div class="background-layout">
+    <div class="highlighted-area">
       <div class="highlighted-text">
         <div class="text-area">
           <p>Introducing <?php echo get_bloginfo('name') ?></p>
@@ -11,11 +12,15 @@
           <a href="#portfolio-section">View Latest</a>
           <a href="" class="fill">Contact Us</a>
         </div>
+        <!-- <div class="shape_1"> -->
         <div class="ellipse_8"></div>
         <div class="ellipse_8_copy"></div>
         <div class="ellipse_9"></div>
         <div class="ellipse_11"></div>
+        <!-- </div> -->
       </div>
+    </div>
+    <div class="highlighted-area">
       <div class="highlighted-img">
         <div class="shape1"></div>
         <div class="shape1_copy2"></div>
@@ -77,6 +82,7 @@
           </g>
         </svg>
       </div>
+    </div>
     </div>
   </div>
 </section>

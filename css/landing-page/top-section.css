@@ -28,16 +28,26 @@
   height: 100%;
 }
 
+#top .background-layout .highlighted-area {
+  /* position: relative; */
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #top .background-layout .highlighted-text {
   position: relative;
-  flex-basis: 50%;
+  /* flex-basis: 50%;
   display: grid;
   place-items: center;
-  height: 100%;
+  height: 100%; */
 }
 
 #top .background-layout .highlighted-text .text-area {
   color: white;
+  margin-bottom: 50px;
 }
 
 #top .background-layout .highlighted-text .text-area p {
@@ -90,15 +100,15 @@
 
 #top .background-layout .highlighted-img {
   position: relative;
-  flex-basis: 50%;
+  /* flex-basis: 50%; */
 }
 
 /* Shapes */
 #top .background-layout .highlighted-text .ellipse_8 {
   background: url("../../img/Ellipse_8.png");
   position: absolute;
-  top: 190px;
-  left: 230px;
+  top: -20px;
+  left: 164px;
   /* background-size: 24rem; */
   height: 150px;
   width: 150px;
@@ -110,8 +120,8 @@
 #top .background-layout .highlighted-text .ellipse_8_copy {
   background: url("../../img/Ellipse_8_copy.png");
   position: absolute;
-  top: 420px;
-  right: 90px;
+  top: 190px;
+  right: -35px;
   /* background-size: 24rem; */
   height: 150px;
   width: 150px;
@@ -123,8 +133,8 @@
 #top .background-layout .highlighted-text .ellipse_9 {
   background: url("../../img/Ellipse_9.png");
   position: absolute;
-  left: 0;
-  top: 0;
+  left: -100px;
+  top: -250px;
   /* background-size: 24rem; */
   height: 150px;
   width: 158px;
@@ -136,8 +146,8 @@
 #top .background-layout .highlighted-text .ellipse_11 {
   background: url("../../img/Ellipse_11.png");
   position: absolute;
-  left: 150px;
-  top: 80px;
+  left: 80px;
+  top: -130px;
   /* background-size: 24rem; */
   height: 158px;
   width: 150px;
@@ -149,8 +159,8 @@
 #top .background-layout .highlighted-img .shape1 {
   background: url("../../img/shape1.png");
   position: absolute;
-  left: -70px;
-  top: 490px;
+  left: -40px;
+  top: 550px;
   /* background-size: 24rem; */
   height: 158px;
   width: 150px;
@@ -162,9 +172,9 @@
 #top .background-layout .highlighted-img .shape1_copy2 {
   background: url("../../img/shape1Copy2.png");
   position: absolute;
-  left: 60px;
-  top: 70px;
-  z-index: 1;
+  left: 15px;
+  top: 100px;
+  z-index: 2;
   /* background-size: 24rem; */
   height: 158px;
   width: 150px;
@@ -176,7 +186,7 @@
 #top .background-layout .highlighted-img .ellipse_10 {
   background: url("../../img/Ellipse_10.png");
   position: absolute;
-  right: 0px;
+  right: 62px;
   top: 150px;
   /* background-size: 24rem; */
   height: 195px;
@@ -189,7 +199,7 @@
 #top .background-layout .highlighted-img .ellipse_10_copy {
   background: url("../../img/Ellipse_10_copy.png");
   position: absolute;
-  right: -59px;
+  right: -20px;
   top: 370px;
   height: 158px;
   width: 140px;
@@ -199,17 +209,17 @@
 #top .background-layout .highlighted-img .ellipse_11_copy {
   background: url("../../img/Ellipse_11_copy.png");
   position: absolute;
-  right: 213px;
+  right: 255px;
   top: 480px;
-  z-index: 1;
+  z-index: 2;
   height: 158px;
   width: 160px;
   background-repeat: no-repeat;
 }
 
 #top .background-layout .highlighted-img .featured_ellipse {
-  position: absolute;
-  left: 50px;
+  position: relative;
+  z-index:1;
   width: 597px;
   height: 788px;
 }
