@@ -27,8 +27,9 @@ get_header();
             </div>
             <div class="team-gallery">
                 <div class="team-gallery_photo">
-                    <!-- <img src="" alt=""> -->
-                    <div class="photo"></div>
+                    <div class="photo">
+                    <img src="" alt="">
+                    </div>
                     <div class="photo-info">
                         <span class="name">Macy Killy</span>
                         <span class="profession">Designer</span>
@@ -36,7 +37,8 @@ get_header();
                 </div>
                 <div class="team-gallery_photo">
                     <!-- <img src="" alt=""> -->
-                    <div class="photo"></div>
+                    <div class="photo">
+                    </div>
                     <div class="photo-info">
                         <span class="name">Macy Killy</span>
                         <span class="profession">Designer</span>

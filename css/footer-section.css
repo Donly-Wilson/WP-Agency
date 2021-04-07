@@ -183,32 +183,6 @@ footer .contact .contact-form input[type="submit"] {
   text-transform: uppercase;
 }
 
-/* Tablets */
-@media only screen and (max-width: 960px) {
-}
-/* Phones */
-@media only screen and (max-width: 767px) {
-  footer {
-    padding: 0 15px 100px;
-  }
-  footer .contact {
-    flex-direction: column-reverse;
-  }
-
-  footer .contact .contact-info {
-    width: auto;
-  }
-
-  footer .social-container a {
-    font-size: 2rem;
-  }
-
-  footer .contact .contact-form {
-    position: static;
-    width: auto;
-  }
-}
-
 /* WpForms */
 
 footer .contact .wp-form {
@@ -443,4 +417,43 @@ footer
   .intl-tel-input
   ~ label.wpforms-field-label {
   display: none;
+}
+
+/* Tablets */
+@media only screen and (max-width: 960px) {
+}
+/* Phones */
+@media only screen and (max-width: 767px) {
+  footer {
+    padding: 0 15px 100px;
+  }
+
+  footer .title {
+    text-align: center;
+  }
+  
+  footer .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 140px;
+    flex-direction: column-reverse;
+  }
+
+  footer .contact .contact-info {
+    width: auto;
+  }
+
+  footer .social-container a {
+    font-size: 2rem;
+  }
+
+  footer .contact .contact-form {
+    position: static;
+    width: auto;
+  }
+
+  footer .contact .wp-form {
+    width: 322px;
+  }
 }
