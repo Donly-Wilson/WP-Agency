@@ -25,41 +25,29 @@ get_header();
                 <h3>Our Amazing Team</h3>
                 <p>Choose Impression and your business will benefit from the work of our team of digital marketing experts. Although our agency is relatively young, our account managers have a minimum of 5 years’ experience in the industry.</p>
             </div>
+            <?php 
+            // select pod sevices and add it in variable
+            $myTeamPod = pods('my team');
+            // select pod and put them in ascending order
+            $myTeamPod->find('name ASC')    
+            ?>
             <div class="team-gallery">
+            <?php while ($myTeamPod->fetch()) : ?>
+            <!-- //while loop runs aslong as there are are Team pods -->
+            <?php
+            $name = $myTeamPod->field('member_name');
+            $role = $myTeamPod->field('member_role');
+            ?>
                 <div class="team-gallery_photo">
-                    <div class="photo">
-                    <img src="" alt="">
-                    </div>
-                    <div class="photo-info">
-                        <span class="name">Macy Killy</span>
-                        <span class="profession">Designer</span>
-                    </div>
-                </div>
-                <div class="team-gallery_photo">
+                    <div class="photo" style="background: url(http://localhost/wp-content/uploads/2021/01/Nikeceo.jpg); background-repeat: no-repeat; background-size: cover;">
                     <!-- <img src="" alt=""> -->
-                    <div class="photo">
                     </div>
                     <div class="photo-info">
-                        <span class="name">Macy Killy</span>
-                        <span class="profession">Designer</span>
+                        <span class="name"><?php echo $name?></span>
+                        <span class="profession"><?php echo $role?></span>
                     </div>
                 </div>
-                <div class="team-gallery_photo">
-                    <!-- <img src="" alt=""> -->
-                    <div class="photo"></div>
-                    <div class="photo-info">
-                        <span class="name">Macy Killy</span>
-                        <span class="profession">Designer</span>
-                    </div>
-                </div>
-                <div class="team-gallery_photo">
-                    <!-- <img src="" alt=""> -->
-                    <div class="photo"></div>
-                    <div class="photo-info">
-                        <span class="name">Macy Killy</span>
-                        <span class="profession">Designer</span>
-                    </div>
-                </div>
+                <?php endwhile; ?>
             </div>
         </div>
     </div>
