@@ -7,16 +7,16 @@
             <div class="contact-info">
                 <div class="email">
                     <span>Email</span>
-                    <span>newera@agencey.com</span>
+                    <span><?php echo get_theme_mod('landing_footer_email', 'newera@agencey.com') ?></span>
                 </div>
                 <div class="phone">
                     <span>Phone</span>
-                    <span>+1 758 230 9214</span>
-                    <span>+44589002932</span>
+                    <span><?php echo get_theme_mod('landing_footer_number_1', '+1 758 230 9214') ?></span>
+                    <span><?php echo get_theme_mod('landing_footer_number_2', '+44589002932') ?></span>
                 </div>
                 <div class="address">
                     <span>Address</span>
-                    <span>Maigot bay, Kanel, 5th Avenue Broadway Classtown </span>
+                    <span><?php echo get_theme_mod('landing_footer_address', 'Maigot bay, Kanel, 5th Avenue Broadway Classtown') ?></span>
                 </div>
                 <div class="social-container">
                     <a href="http://www.facebook.com/">
@@ -78,5 +78,5 @@
         </div>
     </div>
     <h5>Donly Wilson</h5>
-    <h6>Web Developer</h6>
+    <h6>Copyright © 2021 All rights reserved</h6>
 </footer>
