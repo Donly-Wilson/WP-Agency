@@ -36,13 +36,17 @@
         </div>
         </div>
         <div class="header-menu">
-            <a href="/" data-text="Home">Home</a>
-            <a href="/#services-section" data-text="Services">Services</a>
-            <a href="/#portfolio-section" data-text="Portfolio">Portfolio</a>
-            <a href="/#experience-section" data-text="Experience">Experience</a>
-            <a href="/#blog-section" data-text="Blog">Blog</a>
-            <a href="/#testimonials-section" data-text="Testimonials">Testimonials</a>
-            <a href="/about" data-text="about">about</a>
+            <li class="menu-link">
+                <a href="/" data-text="Home">Home</a>
+                <ul class=subMenu-link>
+                    <li><a href="/#services-section" data-text="Services">Services</a></li>
+                    <li><a href="/#portfolio-section" data-text="Portfolio">Portfolio</a></li>
+                    <li><a href="/#experience-section" data-text="Experience">Experience</a></li>
+                    <li><a href="/#testimonials-section" data-text="Testimonials">Testimonials</a></li>
+                </ul>
+            </li>
+            <li class="menu-link"><a href="/#blog-section" data-text="Blog">Blog</a></li>
+            <li class="menu-link"><a href="/about" data-text="about">about</a></li>
         </div>
         <div class="menu-btn">
             <i class="fas fa-bars"></i>
