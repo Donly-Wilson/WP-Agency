@@ -7,6 +7,7 @@
 @import "landing-page/blog-section.css";
 @import "landing-page/testimonials-section.css";
 @import "portfolio/portfolio-projects.css";
+@import "templates/comment-section.css";
 @import "templates/page.css";
 @import "templates/about-page.css";
 @import "footer-section.css";
@@ -28,7 +29,6 @@ body {
 }
 header {
   display: flex;
-  /* padding: 20px; */
   justify-content: space-between;
   width: 100%;
   position: fixed;
@@ -37,7 +37,7 @@ header {
   transition: all 0.3s ease-in-out;
   /* default */
   background: #081738;
-  padding: 8px 20px;
+  /* padding: 8px 20px; */
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
 }
 header .logo {
@@ -46,6 +46,7 @@ header .logo {
   text-transform: uppercase;
   color: white;
   display: flex;
+  padding: 8px 20px;
 }
 header .logo .name {
   background: black;
@@ -60,22 +61,82 @@ header .header-menu {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0px 20px;
 }
+
+header .header-menu .menu-link {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+
+header .header-menu .name:hover {
+  background: none;
+  cursor: default;
+}
+
+header .header-menu .menu-link:hover .subMenu-link {
+  display: block;
+}
+
+header .header-menu .menu-link .subMenu-link:hover {
+  display: block;
+}
+
+header .header-menu .subMenu-link {
+  position: absolute;
+  margin: 0;
+  left: 20px;
+  top: 70px;
+  width: 150px;
+  list-style-type: none;
+  z-index: -1;
+  display: none;
+  /* background: rgba(8, 23, 56); */
+  background: rgba(15, 42, 100, 1);
+  box-shadow: 0 5px 15px -5px rgb(0 0 0 / 20%);
+}
+
+header .header-menu .subMenu-link > li {
+  padding: 0;
+  height: 50px;
+  width: 150px;
+}
+
+header .header-menu .subMenu-link > li:hover {
+  background: rgba(8, 23, 56);
+  outline: 1px solid rgba(255, 82, 83, 0.5);
+}
+
+header .header-menu .subMenu-link > li a {
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+header .header-menu .subMenu-link > li a:hover {
+  background: rgba(8, 23, 56);
+}
+
 header .header-menu a {
   font-size: 1rem;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
+  height: 100%;
   padding: 0 10px;
   /* transition: all .3s ease-in-out; */
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 header .header-menu a:hover {
   font-weight: 700;
   color: #ff5253;
+  background: rgba(15, 42, 100, 1);
 }
 
 header .header-menu a::after {

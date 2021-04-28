@@ -71,12 +71,18 @@
 #top .background-layout .highlighted-text .text-area a:nth-of-type(1) {
   border-radius: 5px;
   background: linear-gradient(-135deg, #fa2b56 0%, #f91c3d 100%);
+  /* background: linear-gradient(-135deg, #e0022f 0%, #e20223 100%); */
   border: 0;
   box-shadow: 17px 22px 51px 9px rgba(9, 9, 9, 0.4);
   color: white;
   margin-right: 10px;
   padding: 20px;
   padding: 11px 20px;
+}
+
+#top .background-layout .highlighted-text .text-area a:nth-of-type(1):hover {
+  background: linear-gradient(-135deg, #e0022f 0%, #e20223 100%);
+  color: #fff;
 }
 
 #top .background-layout .highlighted-text .text-area a {
