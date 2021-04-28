@@ -18,6 +18,11 @@ get_header();
                 <div class="content-area">
                     <div class="inside">
                         <p><?php echo the_content(); ?></p>
+                        <?php
+                        // If comments are open or we have at least one comment, load up the comment template.
+                        if ( comments_open() || get_comments_number() ) :
+                            comments_template();
+                        endif; ?>
                         <?php dynamic_sidebar('left-sidebar'); ?>
                     </div>
                     <div class="right-widgets">

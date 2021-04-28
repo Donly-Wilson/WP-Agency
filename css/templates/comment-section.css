@@ -1,0 +1,59 @@
+.comment_area .comment_area_block {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.comment_area_block_thumbnail img {
+  margin-right: 20px;
+}
+
+.comment_area_block_thumbnail img {
+  width: 60px;
+  height: 60px;
+}
+
+.comment_area_block_info {
+  background: #f9fafc;
+  padding: 20px;
+  width: 700px;
+  min-width: 250px;
+  /*-webkit-box-shadow:  0px 9px 21px 1px rgb(0 0 0 / 6%); */
+  -moz-box-shadow: 0 9px 21px 1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 9px 21px 1px rgb(0 0 0 / 6%);
+  /* -webkit-border-radius: 3px; */
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #f1f1f1;
+}
+
+.comment_area_block_info p {
+  margin-top: 10px;
+}
+
+.comment_area_block_info-by {
+  display: flex;
+  justify-content: space-between;
+}
+.comment_area_block_info-by strong {
+  text-transform: capitalize;
+}
+
+.comment_area_block_info-date {
+  color: lightcoral;
+}
+
+box-shadow: 0px 9px 27px 1px rgb(0 0 0 / 16%);
+
+.comment_area_block_info-reply {
+  display: block;
+}
+.comment_area_block_info-reply span {
+  background: lightcoral;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.comment_area_block_info-reply a {
+  color: #fff;
+  text-decoration: none;
+}
