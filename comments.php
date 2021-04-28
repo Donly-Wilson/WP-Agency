@@ -10,7 +10,7 @@ $comments = $comments_query->query( $args );
  ?>
 <?php if ( $comments ): // Comment Loop?>
     <ul class="comment_area">
-        <h3> Recent comments </h3>
+        <h3 class="comment_area_title"> Recent comments </h3>
         <?php
                 wp_list_comments( array(
                     'style'       => 'ol',
