@@ -58,6 +58,13 @@
         </svg> -->
         <svg class="featured_ellipse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 697 788">
           <defs>
+            <pattern id="img1" patternUnits="userSpaceOnUse" width="<?php echo get_theme_mod('landing_top_section_image_width', '1000');?>" height="<?php echo get_theme_mod('landing_top_section_image_height', '1000');?>">
+              <image href="<?php echo get_theme_mod('landing_top_section_image', 'https://insidetema.com/wp-content/uploads/2018/05/170717100550_1_900x600.jpg');?>" 
+              x="<?php echo get_theme_mod('landing_top_section_image_x_axis', '-210');?>"
+              y="<?php echo get_theme_mod('landing_top_section_image_y_axis', '-168');?>" 
+              width="<?php echo get_theme_mod('landing_top_section_image_width', '1000');?>" 
+              height="<?php echo get_theme_mod('landing_top_section_image_height', '1000');?>" />
+            </pattern>
             <mask id="i8tpb" width="2" height="2" x="-1" y="-1">
               <path fill="#fff" d="M18 4h570v662H18z" />
               <path d="M34.596 209.763S99.786-3.8 273.824 4.23c0 0 78.346 1.605 93.298 86.71 14.952 85.104-15.55 142.911 136.36 263.34 0 0 183.607 156.293 9.569 268.695 0 0-197.363 123.107-371.999-47.102C-33.583 405.664 26.223 237.596 34.596 209.763z" />
@@ -66,9 +73,7 @@
               <feOffset dx="46.2" dy="59.1" in="SourceGraphic" result="FeOffset1023Out" />
               <feGaussianBlur in="FeOffset1023Out" result="FeGaussianBlur1024Out" stdDeviation="31.6 31.6" />
             </filter>
-            <pattern id="img1" patternUnits="userSpaceOnUse" width="697" height="788">
-              <image href="https://insidetema.com/wp-content/uploads/2018/05/170717100550_1_900x600.jpg" x="0" y="0" width="697" height="788" />
-            </pattern>
+            
           </defs>
           <g>
             <g>
