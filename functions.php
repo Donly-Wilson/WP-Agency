@@ -94,3 +94,8 @@ function wpf_dev_required_indicator($text)
     return '';
 }
 add_filter('wpforms_get_field_required_label', 'wpf_dev_required_indicator');
+
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/inc/customizer.php';
