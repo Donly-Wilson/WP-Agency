@@ -10,7 +10,7 @@
           <h1>Digital Design Agency</h1>
           <h1>Easier than ever</h1>
           <a href="#portfolio-section">View Latest</a>
-          <a href="" class="fill">Contact Us</a>
+          <a href="#contact-us" class="fill">Contact Us</a>
         </div>
         <!-- <div class="shape_1"> -->
         <div class="ellipse_8"></div>
@@ -257,7 +257,7 @@
       <?php if (have_posts()) : while (have_posts()) : the_post() ?>
           <!-- start of post -->
           <a href="<?php the_permalink(); ?>" class="post post-<?php the_ID(); ?>">
-            <div class="post-img" style="background: url('<?php echo the_post_thumbnail_url('medium'); ?>');"></div>
+            <div class="post-img" style="background: url('<?php echo the_post_thumbnail_url('large'); ?>'); background-size: cover !important; background-position: center center !important;"></div>
             <div class="details">
               <h4><?php echo the_title(); ?></h4>
               <p><?php echo the_excerpt(); ?></p>

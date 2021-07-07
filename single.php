@@ -13,7 +13,7 @@ get_header();
         <?php if (have_posts()) : while (have_posts()) : the_post() ?>
                 <h1><?php echo the_title(); ?></h1>
                 <div class="project-image">
-                    <div class="img" style="background: url('<?php echo the_post_thumbnail_url('medium'); ?>'); background-size:cover !important; background-position:center center !important;"></div>
+                    <div class="img" style="background: url('<?php echo the_post_thumbnail_url('large'); ?>'); background-size:cover !important; background-position:center center !important;"></div>
                 </div>
                 <div class="content-area">
                     <div class="inside">
@@ -25,9 +25,11 @@ get_header();
                         endif; ?>
                         <?php dynamic_sidebar('left-sidebar'); ?>
                     </div>
-                    <div class="right-widgets">
-                        <?php dynamic_sidebar('right-sidebar'); ?>
-                    </div>
+                    <?php if ( is_active_sidebar('right-sidebar')) :?>
+                        <div class="right-widgets">
+                            <?php dynamic_sidebar('right-sidebar'); ?>
+                        </div>
+                    <?php endif; ?>
                 </div>
             <?php endwhile; ?>
         <?php else : ?>

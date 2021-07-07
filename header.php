@@ -53,11 +53,14 @@
         </div>
     </header>
     <div class="mobile-menu">
-        <a href="/">Home</a>
-        <a href="/#services-section">Services</a>
-        <a href="/#portfolio-section">Portfolio</a>
-        <a href="/#experience-section">Experience</a>
-        <a href="/#blog-section">Blog</a>
-        <a href="/#testimonials-section">Testimonials</a>
-        <a href="/about">about</a>
+        <div class="mobile-menu-options">
+            <a href="/">Home</a>
+            <a href="/#services-section">Services</a>
+            <a href="/#portfolio-section">Portfolio</a>
+            <a href="/#experience-section">Experience</a>
+            <a href="/#blog-section">Blog</a>
+            <a href="/#testimonials-section">Testimonials</a>
+            <a href="/about">About</a>
+        </div>
+        <div class="menu-btn"></div>
     </div>

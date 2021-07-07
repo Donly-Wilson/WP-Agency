@@ -18,6 +18,7 @@
   grid-gap: 15px;
   overflow: hidden;
 }
+
 #blog-section .blog-container .post {
   position: relative;
   transition: all 0.4s ease-in-out;
@@ -26,6 +27,7 @@
   min-height: 588px;
   overflow: hidden;
 }
+
 #blog-section .blog-container .post .post-img {
   height: 100%;
   width: 100%;
@@ -89,6 +91,7 @@
 #blog-section .blog-container .post:hover .details {
   transform: translate3d(0, -588px, 0);
 }
+
 #blog-section .blog-container .post:hover .more .button {
   color: #ff5253;
   opacity: 1;
@@ -102,6 +105,15 @@
     grid-template-rows: 588px 588px 588px;
     grid-gap: 15px;
     overflow: hidden;
+  }
+
+  #blog-section .blog-container .post {
+    min-height: auto;
+  }
+
+  /* hover effect on post */
+  #blog-section .blog-container .post:hover .details {
+    transform: translate3d(0, -100%, 0);
   }
 }
 /* Phones */

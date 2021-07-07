@@ -1,5 +1,5 @@
 <footer>
-    <div class="container">
+    <div id="contact-us" class="container">
         <div class="title">
             <h1>Contact</h1>
         </div>

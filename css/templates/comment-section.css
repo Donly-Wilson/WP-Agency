@@ -20,7 +20,7 @@
   background: #f9fafc;
   padding: 20px;
   width: 700px;
-  min-width: 250px;
+  max-width: 700px;
   /*-webkit-box-shadow:  0px 9px 21px 1px rgb(0 0 0 / 6%); */
   -moz-box-shadow: 0 9px 21px 1px rgba(0, 0, 0, 0.06);
   box-shadow: 0px 9px 21px 1px rgb(0 0 0 / 6%);
@@ -70,5 +70,5 @@
 }
 
 .comment .children {
-  margin-left: 80px;
+  margin-left: 7%;
 }

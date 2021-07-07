@@ -102,7 +102,7 @@
 
 #portfolio-projects .blog .content-area .right-widgets .widget-box {
   padding: 15px;
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
 }
 
 #portfolio-projects .blog .content-area .right-widgets .widget-box h3 {
@@ -110,13 +110,24 @@
   margin: 0 0 2rem;
 }
 
-#portfolio-projects .blog .content-area .right-widgets .widget-box #wp-calendar {
-  width:100%;
+#portfolio-projects
+  .blog
+  .content-area
+  .right-widgets
+  .widget-box
+  #wp-calendar {
+  width: 100%;
 }
 
-#portfolio-projects .blog .content-area .right-widgets .widget-box #wp-calendar caption{
-  width:100%;
-  margin: .8rem 0;
+#portfolio-projects
+  .blog
+  .content-area
+  .right-widgets
+  .widget-box
+  #wp-calendar
+  caption {
+  width: 100%;
+  margin: 0.8rem 0;
 }
 
 @media only screen and (max-width: 960px) {
@@ -145,5 +156,9 @@
   #portfolio-projects .technologies .icons {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  #portfolio-projects .blog .content-area .inside {
+    width: 100%;
   }
 }
