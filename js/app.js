@@ -1,3 +1,4 @@
+/*----------------Hamburger Menu Toggle---------------*/
 var menuBtn = document.getElementsByClassName('menu-btn')
 var mobileMenu = document.getElementsByClassName('mobile-menu')
 var clickedBtn = function() {
@@ -5,8 +6,9 @@ var clickedBtn = function() {
 }
 
 menuBtn[0].addEventListener('click', clickedBtn);
+menuBtn[1].addEventListener('click', clickedBtn);
 
-console.log(menuBtn[0]);
+console.log(menuBtn[1]);
 
 /*----------------Header---------------*/
 const header  = document.querySelector("header");
