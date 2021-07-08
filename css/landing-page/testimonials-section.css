@@ -30,7 +30,7 @@
 }
 #testimonials-section .testimonials-container {
   display: grid;
-  grid-template-columns: 12% 76% 12%;
+  grid-template-columns: 12% 74% 12%;
   grid-gap: 15px;
   padding: 100px 0;
 }
